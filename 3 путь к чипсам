@@ -1,0 +1,16 @@
+var time = 15;
+var goToDairy = false;
+var goToStore = false;
+var goToMarket = false;
+
+console.log('Время сейчас : ' + time);
+
+switch (true) {
+ case time >=8 && time < 13 || time > 14 && time < 19 : goToDairy = true;
+  console.log('Фабрика чипсов'); break;
+ case time >=9 && time < 14 || time > 15 && time < 17 : goToStore = true;
+  console.log('Чипсы - Магазин'); break;
+ case time >=7 && time < 20 : goToMarket = true;
+  console.log('Чипсы - Рынок'); break;
+ default: console.log('Всё закрыто');
+}
