@@ -1,0 +1,14 @@
+var poly = 65724;
+var ylop = 0;
+var isPalindrome = false;
+
+for (var i = 1; poly / i >= 1; i *= 10) {
+    ylop += Math.floor(poly / i) % 10;
+    ylop = ylop.toString();
+}
+
+ylop = +ylop;
+
+if (ylop === poly) {
+    isPalindrome = true;
+}
