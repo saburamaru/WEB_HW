@@ -1,0 +1,20 @@
+function getWalkDuration(raining, temperature) {
+    if (raining)
+        return 0;
+
+    if (temperature >= 10 && temperature < 15)
+        return 30;
+    else if (temperature >= 15 && temperature < 25)
+        return 40;
+	  else if (temperature >= 25 && temperature < 35)
+	        return 20;
+
+    return 0;}
+
+alert(getWalkDuration(true,15)===0);
+
+alert(getWalkDuration(false,40)===0);
+
+alert(getWalkDuration(false,15)===40);
+
+
